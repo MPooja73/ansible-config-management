@@ -5,7 +5,7 @@ on:
     branches:
       - main # Trigger when changes are pushed to the 'main' branch
   schedule:
-    - cron: "0 0 * * *" # Run daily at midnight (UTC)
+    - cron: "*/30 * * * *" # Run daily at midnight (UTC)
 
 jobs:
   auto_commit:
